@@ -27,9 +27,25 @@ public class CounterStrike {
         System.out.println("Введіть кількість фрагів для 5-ти гравців першої команди : ");
         if(scanner.hasNextInt()) {
             fragsFistPlayerTeam1 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsSecondPlayerTeam1 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsThirdPlayerTeam1 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsPlayerForthTeam1 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsPlayerFifthTeam1 = scanner.nextInt();
         }  else {
             System.out.println("Wrong data! Restart program!!!");
@@ -44,9 +60,25 @@ public class CounterStrike {
         System.out.println("Введіть кількість фрагів для 5-ти гравців другої команди : ");
         if(scanner.hasNextInt()) {
             fragsFistPlayerTeam2 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsSecondPlayerTeam2 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsThirdPlayerTeam2 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsPlayerForthTeam2 = scanner.nextInt();
+        }  else {
+            System.out.println("Wrong data! Restart program!!!");
+            System.exit(0);
+        }if(scanner.hasNextInt()) {
             fragsPlayerFifthTeam2 = scanner.nextInt();
         }  else {
             System.out.println("Wrong data! Restart program!!!");
@@ -57,14 +89,14 @@ public class CounterStrike {
         int resultTeam1 = fragsFistPlayerTeam1 + fragsSecondPlayerTeam1 + fragsThirdPlayerTeam1
                 + fragsPlayerForthTeam1 + fragsPlayerFifthTeam1;
 
-        int avgTeam1 = ((fragsFistPlayerTeam1 + fragsSecondPlayerTeam1 + fragsThirdPlayerTeam1
+        double avgTeam1 = ((double) (fragsFistPlayerTeam1 + fragsSecondPlayerTeam1 + fragsThirdPlayerTeam1
                 + fragsPlayerForthTeam1 + fragsPlayerFifthTeam1) / countPlayers);
         System.out.println("Середнє арифметичне team " + nameTeam1 + " : " + avgTeam1);
 
         int resultTeam2 = fragsFistPlayerTeam2 + fragsSecondPlayerTeam2 + fragsThirdPlayerTeam2
                 + fragsPlayerForthTeam2 + fragsPlayerFifthTeam2;
 
-        int avgTeam2 = ((fragsFistPlayerTeam2 + fragsSecondPlayerTeam2 + fragsThirdPlayerTeam2
+        double avgTeam2 = ((double) (fragsFistPlayerTeam2 + fragsSecondPlayerTeam2 + fragsThirdPlayerTeam2
                 + fragsPlayerForthTeam2 + fragsPlayerFifthTeam2) / countPlayers);
         System.out.println("Середнє арифметичне team " + nameTeam2 + " : " + avgTeam2);
 
