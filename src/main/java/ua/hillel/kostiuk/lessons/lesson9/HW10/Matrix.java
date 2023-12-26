@@ -11,8 +11,13 @@ public class Matrix {
         while (true) {
             System.out.print("var 1: ");
             if (scanner.hasNextInt()) {
-                sizeN = scanner.nextInt();
-                break;
+                int num = scanner.nextInt();
+                if(num >= 0) {
+                    sizeN = num;
+                    break;
+                }else {
+                    System.out.println("Size can`t be -");
+                }
             } else {
                 System.out.println("Enter a number!");
                 scanner.next();
@@ -21,8 +26,13 @@ public class Matrix {
         while (true) {
             System.out.print("var 2: ");
             if (scanner.hasNextInt()) {
-                sizeM = scanner.nextInt();
-                break;
+                int num = scanner.nextInt();
+                if(num >= 0) {
+                    sizeM = num;
+                    break;
+                } else {
+                    System.out.println("Size can`t be -");
+                }
             } else {
                 System.out.println("Enter a number!");
                 scanner.next();
